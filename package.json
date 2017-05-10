@@ -1,0 +1,31 @@
+{
+  "name": "knp-bin",
+  "version": "0.0.0",
+  "description": "knp wrapper that makes it seamlessly available as a local dependency",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thammin/knp-bin.git"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "keywords": [
+    "nlp",
+    "japanese",
+    "knp"
+  ],
+  "author": "Paul Young <thammin@live.co.uk> (https://github.com/thammin)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thammin/knp-bin/issues"
+  },
+  "homepage": "https://github.com/thammin/knp-bin#readme",
+  "dependencies": {
+    "bin-build": "^2.2.0",
+    "logalot": "^2.1.0"
+  }
+}
