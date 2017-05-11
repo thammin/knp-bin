@@ -4,7 +4,9 @@
   "description": "knp wrapper that makes it seamlessly available as a local dependency",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "postinstall": "node lib/install.js",
+    "compile": "node lib/install.js --compile",
+    "test": "ava"
   },
   "repository": {
     "type": "git",
@@ -26,6 +28,14 @@
   "homepage": "https://github.com/thammin/knp-bin#readme",
   "dependencies": {
     "bin-build": "^2.2.0",
+    "bin-wrapper": "^3.0.2",
+    "minimist": "^1.2.0",
     "logalot": "^2.1.0"
+  },
+  "devDependencies": {
+    "ava": "^0.19.1",
+    "bin-check": "^4.0.1",
+    "execa": "^0.6.3",
+    "tempy": "^0.1.0"
   }
 }
